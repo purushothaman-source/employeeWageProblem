@@ -15,15 +15,17 @@ public class EmployeeWageBuilder {
 		Random random=new Random();
 		//generating Random variable
 		int empCheck=random.nextInt(3);
-		if(empCheck==ISPRESENT) {
-			System.out.println("EMPLOYEE IS PRESENT FULLTIME");
+		//case statement
+		switch(empCheck) {
+		case ISPRESENT: 
+			System.out.println("EMPLOYEE IS FULLTIME");
 			empHrs=8;
-		}
-		else if (empCheck==ISPARTTIME) {
+	        break;	
+		case ISPARTTIME: 
 			System.out.println("EMPLOYEE IS PART TIME");
 			empHrs=4;
-		}
-		else {
+		    break;
+		default:
 			System.out.println("EMPLOYEE IS ABSENT");
             empHrs=0;
 		}
