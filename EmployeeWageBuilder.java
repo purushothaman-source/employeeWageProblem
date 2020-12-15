@@ -11,7 +11,6 @@ public class EmployeeWageBuilder  {
 		final int ISPARTTIME=2;
 		final int EmpRatePerHour=20;
 		int empHrs;
-		final int TOTAL_EMP_HRS=100;
 		final int TOTAL_WORKING_DAYS=20;
 		int workingDays=0;
 		int totalworkinghours=0;
@@ -19,7 +18,7 @@ public class EmployeeWageBuilder  {
 		
 		//random class
 		Random random=new Random();
-		while(totalworkinghours<=TOTAL_EMP_HRS && workingDays<TOTAL_WORKING_DAYS) {
+		while( workingDays<TOTAL_WORKING_DAYS) {
 			
 		//generating Random variable
 		int empCheck=random.nextInt(3);
